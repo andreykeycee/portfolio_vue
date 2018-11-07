@@ -1,8 +1,39 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700');
 
+// Fonts
+
 $sansSerif: 'Roboto Condensed', sans-serif;
 $logoFont:  'Oswald', sans-serif;
+
+// Colors
+
 $purple: #7a6acd;
 $blue: #6a9ccd;
+$darkBlue: #2d5986;
+$dark: #0d1a26;
 $light: #ecf2f9;
+$mainGradient: linear-gradient(to right, $purple , $blue);
+$borderGradient: linear-gradient(to bottom, $purple , $blue);
+$blueShadow: 0px 0px 5px 0px $blue;
+
+// others
+
+$changeColor: .8s;
+
+// media queries
+
+$small: 900px;
+$large: 1330px;
+
+@mixin respond-to ($media) {
+  @if $media == handhelds {
+    @media only screen and (max-width: $small) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: $small + 1) and (max-width: $large - 1) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: $large) { @content; }
+  }
+}

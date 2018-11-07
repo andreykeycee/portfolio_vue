@@ -8,7 +8,7 @@
   export default {
     data() {
       return {
-        
+
       }
     }
   }
@@ -19,7 +19,7 @@
 
   header {
     height: 100vh;
-    background: linear-gradient(to right, $purple , $blue);
+    background: $mainGradient;
 
     #greet {
       font-family: $sansSerif;
