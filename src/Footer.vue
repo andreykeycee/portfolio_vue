@@ -1,9 +1,9 @@
 <template>
   <footer>
     <div id="icons-wrapper">
-      <a href="#"><img src="./img/iconmonstr-facebook-4-48.png" alt=""></a>
-      <a href="#"><img src="./img/iconmonstr-github-1-48.png" alt=""></a>
-      <a href="#"><img src="./img/iconmonstr-vk-4-48.png" alt=""></a>
+      <a href="#"><img src="https://res.cloudinary.com/dblqrwxjg/image/upload/v1541757410/iconmonstr-facebook-4-48.png" alt=""></a>
+      <a href="#"><img src="https://res.cloudinary.com/dblqrwxjg/image/upload/v1541757410/iconmonstr-github-1-48.png" alt=""></a>
+      <a href="#"><img src="https://res.cloudinary.com/dblqrwxjg/image/upload/v1541757410/iconmonstr-vk-4-48.png" alt=""></a>
     </div>
   </footer>
 </template>
