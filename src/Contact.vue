@@ -1,13 +1,12 @@
 <template>
   <div id="contact">
     <h2>contact us</h2>
-    <form class="contact-form" action="" method="">
+    <form class="contact-form" action="mailto:tessarianisbest@gmail.com" method="get">
       <label for="name">your name:</label>
-      <input type="text" id="name" name="name" value="">
-      <label for="email">your email:</label>
-      <input type="text" id="email" name="email" value="">
+      <input type="text" id="name" name="subject" value="">
       <label for="feedback">your thoughts:</label>
-      <textarea id="feedback" name="feedback" rows="8" cols="80"></textarea>
+      <textarea id="feedback" name="body" rows="8" cols="80"></textarea>
+      <input type="submit" value="Send">
     </form>
   </div>
 </template>
@@ -27,7 +26,7 @@ export default {
 
 #contact {
   background: $mainGradient;
-  height: 60vh;
+  height: 65vh;
 
   h2 {
     color: $light;
@@ -46,7 +45,8 @@ export default {
     label {
       font-size: 2rem;
       color: $light;
-      margin-top: .5em;
+      margin-top: .7em;
+      margin-bottom: .5rem;
     }
 
     input {
@@ -64,6 +64,21 @@ export default {
         opacity: .8;
         transition: .5s;
         outline: none;
+      }
+
+      &[type=submit] {
+        opacity: .8;
+        margin: 2rem auto;
+        width: 20rem;
+        height: 4rem;
+        font-size: 2.5rem;
+        color: $mixed;
+
+        &:hover {
+          cursor: pointer;
+          background: transparent;
+          color: $light;
+        }
       }
     }
 

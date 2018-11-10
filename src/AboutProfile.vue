@@ -29,7 +29,7 @@ export default {
     height: 50vh;
     margin: auto;
     padding: 2em;
-    border: 3px solid $purple;
+    border: 3px solid $mixed;
     border-radius: 25px;
 
     h3 {
